@@ -1,0 +1,2 @@
+Office.onReady((()=>{let e=new URL(window.location).searchParams,c=e.get("success"),s=e.get("auth_code");Office.context.ui.messageParent(JSON.stringify({success:c,auth_code:s}))}));
+//# sourceMappingURL=odoologinredirect.js.map
