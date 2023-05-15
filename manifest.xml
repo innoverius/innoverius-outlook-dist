@@ -4,7 +4,7 @@
   <Version>1.0.0.0</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Odoo Cases Addin Public"/>
+  <DisplayName DefaultValue="Odoo Cases Addin"/>
   <Description DefaultValue="An add-in that allows to save e-mails and attachments as files in Odoo."/>
   <IconUrl DefaultValue="https://innoverius.github.io/Microsoft365-public/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://innoverius.github.io/Microsoft365-public/assets/icon-128.png"/>
