@@ -36,6 +36,45 @@
   width: 100%;
 }
 
+.main-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  flex: 1;
+  width: 100%;
+}
+
+.app-main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 10px 20px;
+}
+
+.app-login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 10px 20px;
+}
+
+.page-title {
+  font-size: 30px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 .case-outer-container, .mail-outer-container, .attachments-outer-container {
   margin-bottom: 20px;
   width: 100%;
@@ -53,34 +92,54 @@
   margin-bottom: 5px;
 }
 
-.tags {
-  margin-bottom: 3px;
+.tags-container {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* .tags {
+  margin-bottom: 3px;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
 .tag {
   cursor: default;
-  margin: 1px 2px 1px 0;
+  margin: 1px 3px 2px 0px;
   font-weight: bold;
   font-size: 12px;
   color: white;
   background-color: #0F6CBD;
+  border: 1px solid #0F6CBD;
 }
 
-.mail-add-button, .save-button, .login-button {
+.mail-add-button, .save-button, .login-button, .signup-button {
   --bs-btn-bg: #0F6CBD;
   --bs-btn-border-color: #0F6CBD;
   --bs-btn-hover-bg: #0e5ea3;
   --bs-btn-hover-border-color: #0e5ea3;
   --bs-btn-active-bg: #0e5ea3;
   --bs-btn-active-border-color: #0e5ea3;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.login-button {
+  margin-top: 5px;
+}
+
+.login-div {
+  width: 100%;
+  height: 100%;
 }
 
 .tag-select-button {
-  width: 40%;
+  width: 90px;
   font-size: 12px;
-  padding: 1px 35px 1px 6px;
+  padding: 1px 35px 1px 10px;
+  margin: 1px 3px 2px 0px;
 }
 
 select:invalid, .default-option {
@@ -95,12 +154,12 @@ b {
 * ODOO PLUGIN TASKPANE CSS
 */
 
-.app-main {
+/* .app-main {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* body {
    margin: 0;
@@ -180,8 +239,8 @@ b {
   /* color: blue; */
   color: #0F6CBD;
   text-decoration: none;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  /* padding-bottom: 8px;
+  padding-top: 8px; */
 }
 
 .odoo-filled-button {
@@ -211,7 +270,7 @@ b {
   text-align: center; 
   border-bottom: 1px solid #56565b; 
   line-height: 0.1em;
-  margin: 20px 0 20px; 
+  margin: 15px 0; 
 }
 
 .horizontal-line > span { 
@@ -347,8 +406,9 @@ b {
 
 .connect-your-database {
   font-size: 30px;
-  width: 200px;
-  margin: auto;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -360,6 +420,6 @@ b {
 
 .connect-button {
   margin: 10px auto;
-  text-align: center; /* Edge */
+  text-align: center;
   width: fit-content;
 }
