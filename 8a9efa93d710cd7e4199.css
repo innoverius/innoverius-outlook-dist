@@ -73,14 +73,14 @@
   background-color: whitesmoke;
 }
 
-.success-content {
+/* .success-content {
   padding-top: 20vh;
   align-items: center;
-}
+} */
 
 .page-title {
   font-size: 30px;
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 15px;
   text-align: left;
 }
@@ -294,12 +294,8 @@ b {
 
 .link-like-button {
   cursor: pointer;
-  /* color: blue; */
-  /* color: #0F6CBD; */
-  color: #0d6efd;
+  color: #0F6CBD;
   text-decoration: none;
-  /* padding-bottom: 8px;
-  padding-top: 8px; */
 }
 
 .odoo-filled-button {
