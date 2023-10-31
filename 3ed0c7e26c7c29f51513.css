@@ -101,6 +101,22 @@
   margin-bottom: 20px;
 }
 
+.attachments-title-div {
+  overflow: auto;
+}
+
+.attachments-title {
+  float: left;
+}
+
+.attachments-add-all-button {
+  float: right;
+}
+
+.tag-all-select-div {
+  margin-bottom: 15px;
+}
+
 .name-container {
   margin-bottom: 5px;
 }
@@ -120,7 +136,7 @@
   border: 1px solid #0F6CBD;
 }
 
-.mail-add-button, .save-button, .login-button, .signup-button {
+.attachments-add-all-button, .mail-add-button, .save-button, .login-button, .signup-button {
   --bs-btn-bg: #0F6CBD;
   --bs-btn-border-color: #0F6CBD;
   --bs-btn-hover-bg: #0e5ea3;
