@@ -41,13 +41,13 @@
   min-height: 100%;
 }
 
-.main-main, .login-main, .success-main, .timesheet-main {
+.main-main, .login-main, .success-main, .timesheet-main, .error-main {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.main-content, .login-content, .success-content, .timesheet-content {
+.main-content, .login-content, .success-content, .timesheet-content, .error-content {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
