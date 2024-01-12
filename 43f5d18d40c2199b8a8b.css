@@ -142,13 +142,29 @@
   border: 1px solid #0F6CBD;
 }
 
-.attachments-add-all-button, .mail-add-button, .save-button, .login-button, .signup-button, .cancel-button {
+.attachments-add-all-button, .mail-add-button, .save-button, .login-button, .signup-button {
   --bs-btn-bg: #0F6CBD;
   --bs-btn-border-color: #0F6CBD;
   --bs-btn-hover-bg: #0e5ea3;
   --bs-btn-hover-border-color: #0e5ea3;
   --bs-btn-active-bg: #0e5ea3;
   --bs-btn-active-border-color: #0e5ea3;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.cancel-button, .continue-button {
+  --bs-btn-color: black;
+  --bs-btn-bg: #cbcbcb;
+  --bs-btn-border-color: #cbcbcb;
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: #bbbbbb;
+  --bs-btn-hover-border-color: #bbbbbb;
+  --bs-btn-active-color: black;
+  --bs-btn-active-bg: #bbbbbb;
+  --bs-btn-active-border-color: #bbbbbb;
   padding-top: 2px;
   display: flex;
   flex-direction: row;
