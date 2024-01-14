@@ -155,7 +155,7 @@
   width: fit-content;
 }
 
-.cancel-button, .continue-button {
+.cancel-button {
   --bs-btn-color: black;
   --bs-btn-bg: #cbcbcb;
   --bs-btn-border-color: #cbcbcb;
