@@ -60,8 +60,30 @@
                       <bt:Image size="80" resid="Icon.80x80"/>
                     </Icon>
                     <Action xsi:type="ShowTaskpane">
-                      <SourceLocation resid="Taskpane.Url"/>
+                      <SourceLocation resid="Taskpane.ReadUrl"/>
                       <SupportsPinning>true</SupportsPinning>
+                    </Action>
+                  </Control>
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+            <ExtensionPoint xsi:type="MessageComposeCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="msgComposeGroup">
+                  <Label resid="GroupLabel"/>
+                  <Control xsi:type="Button" id="msgComposeButton">
+                    <Label resid="TaskpaneButton.Label"/>
+                    <Supertip>
+                      <Title resid="TaskpaneButton.Label"/>
+                      <Description resid="TaskpaneButton.Tooltip"/>
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="Icon.16x16"/>
+                      <bt:Image size="32" resid="Icon.32x32"/>
+                      <bt:Image size="80" resid="Icon.80x80"/>
+                    </Icon>
+                    <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="Taskpane.ComposeUrl"/>
                     </Action>
                   </Control>
                 </Group>
@@ -78,6 +100,8 @@
         </bt:Images>
         <bt:Urls>
           <bt:Url id="Taskpane.Url" DefaultValue="https://innoverius.github.io/Microsoft365-public/taskpane.html"/>
+          <bt:Url id="Taskpane.ReadUrl" DefaultValue="https://innoverius.github.io/Microsoft365-public/read-taskpane.html"/>
+          <bt:Url id="Taskpane.ComposeUrl" DefaultValue="https://innoverius.github.io/Microsoft365-public/compose-taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="Innoverius Add-in"/>
