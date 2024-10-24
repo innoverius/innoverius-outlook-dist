@@ -6,8 +6,8 @@
   <DefaultLocale>nl-BE</DefaultLocale>
   <DisplayName DefaultValue="Innoverius"/>
   <Description DefaultValue="An add-in that allows to save e-mails and attachments as files in Odoo."/>
-  <IconUrl DefaultValue="https://innoverius.github.io/Microsoft365-public/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://innoverius.github.io/Microsoft365-public/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.innoverius.com/helpdesk"/>
   <AppDomains>
     <AppDomain>https://www.innoverius.com</AppDomain>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://innoverius.github.io/Microsoft365-public/taskpane.html"/>
+        <SourceLocation DefaultValue="https://innoverius.github.io/outlook-public/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -94,14 +94,14 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://innoverius.github.io/Microsoft365-public/assets/icon-16.png"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://innoverius.github.io/Microsoft365-public/assets/icon-32.png"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://innoverius.github.io/Microsoft365-public/assets/icon-80.png"/>
+          <bt:Image id="Icon.16x16" DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-16.png"/>
+          <bt:Image id="Icon.32x32" DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-32.png"/>
+          <bt:Image id="Icon.80x80" DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="Taskpane.Url" DefaultValue="https://innoverius.github.io/Microsoft365-public/taskpane.html"/>
-          <bt:Url id="Taskpane.ReadUrl" DefaultValue="https://innoverius.github.io/Microsoft365-public/read-taskpane.html"/>
-          <bt:Url id="Taskpane.ComposeUrl" DefaultValue="https://innoverius.github.io/Microsoft365-public/compose-taskpane.html"/>
+          <bt:Url id="Taskpane.Url" DefaultValue="https://innoverius.github.io/outlook-public/taskpane.html"/>
+          <bt:Url id="Taskpane.ReadUrl" DefaultValue="https://innoverius.github.io/outlook-public/read-taskpane.html"/>
+          <bt:Url id="Taskpane.ComposeUrl" DefaultValue="https://innoverius.github.io/outlook-public/compose-taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="Innoverius Add-in"/>
