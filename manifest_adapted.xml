@@ -5,7 +5,7 @@
   <ProviderName>Innoverius</ProviderName>
   <DefaultLocale>nl-BE</DefaultLocale>
   <DisplayName DefaultValue="Innoverius"/>
-  <Description DefaultValue="An add-in that allows to save e-mails and attachments as files in Odoo."/>
+  <Description DefaultValue="The Innoverius Outlook Add-in allows you to unleash the power of email automation and artificial intelligence within your cases."/>
   <IconUrl DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.innoverius.com/helpdesk"/>
@@ -104,13 +104,23 @@
           <bt:Url id="Taskpane.ComposeUrl" DefaultValue="https://innoverius.github.io/outlook-public/compose-taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
-          <bt:String id="GroupLabel" DefaultValue="Innoverius Add-in"/>
-          <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
+          <bt:String id="GroupLabel" DefaultValue="Innoverius"/>
+          <bt:String id="TaskpaneButton.Label" DefaultValue="Innoverius"/>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a pane displaying all available properties."/>
+          <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open the Innoverius Outlook Add-in."/>
         </bt:LongStrings>
       </Resources>
+      <!-- <WebApplicationInfo> -->
+      <!--   <Id>5aede471-24cc-46ff-be56-7b6442567ca5</Id> -->
+      <!--   <Resource>api://innoverius.github.io/5aede471-24cc-46ff-be56-7b6442567ca5</Resource> -->
+      <!--   <Scopes> -->
+      <!--     <Scope>User.Read</Scope> -->
+      <!--     <Scope>Files.Read</Scope> -->
+      <!--     <Scope>profile</Scope> -->
+      <!--     <Scope>openid</Scope> -->
+      <!--   </Scopes> -->
+      <!-- </WebApplicationInfo> -->
     </VersionOverrides>
   </VersionOverrides>
 </OfficeApp>
