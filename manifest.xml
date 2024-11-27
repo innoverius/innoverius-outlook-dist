@@ -111,16 +111,6 @@
           <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open the Innoverius Outlook Add-in."/>
         </bt:LongStrings>
       </Resources>
-      <WebApplicationInfo>
-        <Id>5aede471-24cc-46ff-be56-7b6442567ca5</Id>
-        <Resource>api://innoverius.github.io/5aede471-24cc-46ff-be56-7b6442567ca5</Resource>
-        <Scopes>
-          <Scope>User.Read</Scope>
-          <Scope>Files.Read</Scope>
-          <Scope>profile</Scope>
-          <Scope>openid</Scope>
-        </Scopes>
-      </WebApplicationInfo>
     </VersionOverrides>
   </VersionOverrides>
 </OfficeApp>
