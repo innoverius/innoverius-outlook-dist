@@ -6,8 +6,8 @@
   <DefaultLocale>nl-BE</DefaultLocale>
   <DisplayName DefaultValue="Innoverius"/>
   <Description DefaultValue="The Innoverius Outlook Add-in allows you to unleash the power of email automation and artificial intelligence within your cases."/>
-  <IconUrl DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.innoverius.com/helpdesk"/>
   <AppDomains>
     <AppDomain>https://www.innoverius.com</AppDomain>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://innoverius.github.io/outlook-public/taskpane.html"/>
+        <SourceLocation DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -94,14 +94,14 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-16.png"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-32.png"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://innoverius.github.io/outlook-public/assets/icon-80.png"/>
+          <bt:Image id="Icon.16x16" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/assets/icon-16.png"/>
+          <bt:Image id="Icon.32x32" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/assets/icon-32.png"/>
+          <bt:Image id="Icon.80x80" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="Taskpane.Url" DefaultValue="https://innoverius.github.io/outlook-public/taskpane.html"/>
-          <bt:Url id="Taskpane.ReadUrl" DefaultValue="https://innoverius.github.io/outlook-public/read-taskpane.html"/>
-          <bt:Url id="Taskpane.ComposeUrl" DefaultValue="https://innoverius.github.io/outlook-public/compose-taskpane.html"/>
+          <bt:Url id="Taskpane.Url" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/taskpane.html"/>
+          <bt:Url id="Taskpane.ReadUrl" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/read-taskpane.html"/>
+          <bt:Url id="Taskpane.ComposeUrl" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/compose-taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="Innoverius"/>
