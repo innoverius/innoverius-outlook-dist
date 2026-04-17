@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
-  <Id>cc1e035e-9d98-438e-abe4-2aa31179d0cb</Id>
-  <Version>1.0.0.9</Version>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="MailApp">
+  <Id>cc1e035e-9d98-438e-abe4-2aa31179d0cc</Id>
+  <Version>2.0.0.0</Version>
   <ProviderName>Innoverius</ProviderName>
-  <DefaultLocale>nl-BE</DefaultLocale>
+  <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Innoverius"/>
-  <Description DefaultValue="The Innoverius Outlook Add-in allows you to unleash the power of email automation and artificial intelligence within your cases."/>
+  <Description DefaultValue="The Innoverius Outlook Add-in allows you to unleash the power of email automation and legal intelligence within your cases."/>
   <IconUrl DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.innoverius.com/helpdesk"/>
   <AppDomains>
-    <AppDomain>https://www.innoverius.com</AppDomain>
+    <AppDomain>https://localhost:3000</AppDomain>
+    <AppDomain>https://innoverius.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
   </Hosts>
   <Requirements>
     <Sets>
-      <Set Name="Mailbox" MinVersion="1.1"/>
+      <Set Name="Mailbox" MinVersion="1.3"/>
     </Sets>
   </Requirements>
   <FormSettings>
-    <Form xsi:type="ItemRead">
+    <Form xsi:type="ItemEdit">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/taskpane.html"/>
-        <RequestedHeight>250</RequestedHeight>
+        <SourceLocation DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/compose-taskpane.html"/>
       </DesktopSettings>
     </Form>
   </FormSettings>
   <Permissions>ReadWriteItem</Permissions>
   <Rule xsi:type="RuleCollection" Mode="Or">
-    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
-    <!-- <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Read"/> -->
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
   </Rule>
   <DisableEntityHighlighting>false</DisableEntityHighlighting>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -44,29 +43,6 @@
       <Hosts>
         <Host xsi:type="MailHost">
           <DesktopFormFactor>
-            <ExtensionPoint xsi:type="MessageReadCommandSurface">
-              <OfficeTab id="TabDefault">
-                <Group id="msgReadGroup">
-                  <Label resid="GroupLabel"/>
-                  <Control xsi:type="Button" id="msgReadOpenPaneButton">
-                    <Label resid="TaskpaneButton.Label"/>
-                    <Supertip>
-                      <Title resid="TaskpaneButton.Label"/>
-                      <Description resid="TaskpaneButton.Tooltip"/>
-                    </Supertip>
-                    <Icon>
-                      <bt:Image size="16" resid="Icon.16x16"/>
-                      <bt:Image size="32" resid="Icon.32x32"/>
-                      <bt:Image size="80" resid="Icon.80x80"/>
-                    </Icon>
-                    <Action xsi:type="ShowTaskpane">
-                      <SourceLocation resid="Taskpane.ReadUrl"/>
-                      <SupportsPinning>true</SupportsPinning>
-                    </Action>
-                  </Control>
-                </Group>
-              </OfficeTab>
-            </ExtensionPoint>
             <ExtensionPoint xsi:type="MessageComposeCommandSurface">
               <OfficeTab id="TabDefault">
                 <Group id="msgComposeGroup">
@@ -99,8 +75,6 @@
           <bt:Image id="Icon.80x80" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="Taskpane.Url" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/taskpane.html"/>
-          <bt:Url id="Taskpane.ReadUrl" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/read-taskpane.html"/>
           <bt:Url id="Taskpane.ComposeUrl" DefaultValue="https://innoverius.github.io/innoverius-outlook-dist/compose-taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
@@ -108,7 +82,7 @@
           <bt:String id="TaskpaneButton.Label" DefaultValue="Innoverius"/>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open the Innoverius Outlook Add-in."/>
+          <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to open the Innoverius Outlook AI Add-in."/>
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>
